@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # resources :tweets  この記述は7つのアクション全てを適用
+
+  # onlyオプションでアクションを指定したものだけを生成。不要なアクションを作らないことで余計なエラーを防ぐ
+  resources :tweets, only: [:index]
+
 end
