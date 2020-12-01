@@ -22,7 +22,7 @@ class TweetsController < ApplicationController
 
   private
 
-  def trweet_params
+  def tweet_params
     # params データを入れる箱のようなもの  paramsメソッドとはRailsで送られたきたパラメーターを受け渡しするメソッドです。主にPOSTでフォームから送られてきたパラメータを受け渡す際に使われます。  
     # require requireメソッドは、パラメーターからどの情報を取得するか、選択します。
     # (:tweet) モデル名
